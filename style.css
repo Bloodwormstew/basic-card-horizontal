@@ -4,71 +4,88 @@
     box-sizing: border-box;
     /* border: 1px solid blue; */
     }
+@font-face {
+  font-family: "Zombie_Holocaust";
+  src: url("Zombie_Holocaust.ttf");
+}
+@font-face {
+  font-family: "CorrectionBrush";
+  src: url("CorrectionBrush.ttf");
+}
 
-
+    
 body {
-    background-color: gray;
-    background-image: url('assets/background.png');
-    background-repeat: no-repeat;
+    background-color: rgb(96, 8, 8);
+    background-image: url('dog.gif');
+    background-size: 40%;
     overflow: hidden;
 }
 /* the main card container */
 
 .card{
-  width: 441px;
-  height: 254px;
+  width: 882px;
+  height: 408px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
   overflow: hidden;
-  box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:rgb(255, 255, 255);
-  border-radius: 30px;
+  box-shadow: 03px 03px 50px 25px #ff000094;
+  background-color:rgba(0, 0, 0, 0.836);
+  border-radius: 0px;
 }
 
 h1{
   margin-bottom: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Zombie_Holocaust";
   font-weight: 600;
   text-align: center;
-  font-size: 45px;
+  font-size: 70px;
   position: relative; top: 40px;
-  color: #27a59c;
-  
+  color: #b70a0a;
+  }
+a{
+  cursor: url("blood.png"), auto;
+   }
+body {
+  cursor: url("knife.png"), auto;  
 }
+
 
 h2{
   margin-top: 0px;
-  padding-top: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 200;
+  padding-top: 0x;
+  font-family: "CorrectionBrush";
+  font-weight: 800;
   text-align: center;
   position: relative; 
-  top: 40px;
-  color: #027691;
+  top: 150px;
+  color: #b70a0a;
+  
 } 
 
 h3{
   margin-top: 0px;
   padding-top: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "CorrectionBrush";
   font-weight: 400;
   text-align: center;
   position: relative; 
-  top: 100px;
+  top: 190px;
 }
+
 /* How links are styled on page load and also after a link has been visited */
 a:link, a:visited {
-  color: #0b8577;
+  color: #dcd9d9;
   padding: 0px 0px;
   text-align: center;
   text-decoration: none;
+  
 }
 /* how a link is styled when you hover over it */
 a:hover {
-  color: rgb(0, 151, 206);
+  color: rgb(227, 61, 61);
 }
 
 /* specific styling to scale elements down for mobile */
@@ -83,18 +100,4 @@ a:hover {
     margin: 0 auto;
   }
   
-  h1{
-    top: 22px;
-    font-size: 37px;
-  }
-  
-  h2{
-    font-size: 23px;
-    top: 20px;
-  } 
-  
-  h3{
-    font-size:17px;
-    top: 60px;
-  }
-  }
+ 
